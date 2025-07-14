@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 description 'Sky Identity - Passport Registration System'
-author 'YourName'
+author 'SkyInside'
 version '1.0.0'
 
 shared_script '@es_extended/imports.lua'

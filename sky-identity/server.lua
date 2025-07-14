@@ -96,7 +96,6 @@ RegisterCommand("delchar", function(source, args)
 
     local identifier = xTarget.identifier
 
-    -- Hapus data karakter player dari table `users`
     MySQL.update('DELETE FROM users WHERE identifier = ?', {identifier}, function(rowsChanged)
         if rowsChanged > 0 then
             DropPlayer(targetId, "Karakter kamu telah dihapus oleh admin.")

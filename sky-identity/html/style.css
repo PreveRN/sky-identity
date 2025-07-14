@@ -1,0 +1,161 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Georgia', serif;
+      user-select: none;
+    }
+
+    body{
+            display: none;
+    }
+
+    .passport-book {
+      width: 90%;
+      max-width: 800px;
+      height: 500px;
+      display: flex;
+      background: #1b1b29;
+      border-radius: 12px;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+    }
+
+    .passport-left, .passport-right {
+      width: 50%;
+      padding: 30px;
+    }
+
+    .passport-left {
+      background: #26263d;
+      color: #c5b358;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .passport-left h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .passport-left p {
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .passport-right {
+      background: #202035;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 4px;
+      color: #bbb;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      background: #2f2f49;
+      color: #fff;
+      border: 1px solid #444;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    input:focus {
+      border-color: #c5b358;
+      background: #39395a;
+      outline: none;
+    }
+
+    button {
+      padding: 10px;
+      width: 100%;
+      background: #c5b358;
+      color: #111;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #b3a343;
+    }
+
+    .gender-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .gender-btn {
+      flex: 1;
+      padding: 8px;
+      background: #2f2f49;
+      border: 1px solid #444;
+      border-radius: 6px;
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .gender-btn.selected {
+      background: #c5b358;
+      color: #111;
+      border-color: #c5b358;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .passport-book {
+        flex-direction: column;
+        height: auto;
+        max-height: 500px;
+      }
+
+      .passport-left, .passport-right {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .passport-book {
+        width: 95%;
+      }
+
+      .gender-btn {
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 14px;
+      }
+    }
